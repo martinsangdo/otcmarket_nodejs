@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Dropdown options</title>
+
+		<!-- Required Meta Tags Always Come First -->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+		<meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content=""/>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/dropdown.js"></script>
+
+		<link href="css/style.css" rel="stylesheet"/>
+	<!-- GG merchant center for sang.do@knorex.com -->
+	<meta name="google-site-verification" content="zLHVVKghZoO2pKvTiZbmz4mRUq31jMiZMn4N8pM9Jdc" />
+</head>
+<body>
+
+	<h2>Dropdown options</h2>
+
+	<table id="tbl_container">
+		<tr class="normal_tr">
+				<td><input type="text" class="name"/></td>
+				<td><input type="text" class="symbol"/></td>
+				<td><input type="button" value="X" onclick="removeLine(this);"/></td>
+		</tr>
+	</table>
+	<table>
+		<tr id="tr_tmpl" class="normal_tr hide">
+				<td><input type="text" class="name"/></td>
+				<td><input type="text" class="symbol"/></td>
+				<td><input type="button" value="X" onclick="removeLine(this);"/></td>
+		</tr>
+	</table>
+	<input type="button" value="Add Option" onclick="addOption();"/>
+	<div class="align_right">
+		<input type="button" value="Export CSV" onclick="exportCSV();"/>
+		<input type="button" value="Save" onclick="save();"/>
+	</div>
+	<div id="mess"></div>
+</body></html>
